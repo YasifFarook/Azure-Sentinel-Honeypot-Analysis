@@ -1,0 +1,5 @@
+IP Address of honeypot-vm: 20.37.218.9
+
+Username: yasifadmin
+
+Password: 🤫
