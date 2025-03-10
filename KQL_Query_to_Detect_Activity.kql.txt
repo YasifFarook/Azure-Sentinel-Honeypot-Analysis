@@ -1,0 +1,11 @@
+FAILED_RDP_WITH_GEO_CL
+| extend Timestamp = todatetime(TimeGenerated),
+         Latitude = tostring(extract("latitude:([0-9.-]+)", 1, RawData)),
+         Longitude = tostring(extract("longitude:([0-9.-]+)", 1, RawData)),
+         DestinationHost = tostring(extract("destinationhost:([\\w.-]+)", 1, RawData)),
+         Username = tostring(extract("username:([\\w.-]+)", 1, RawData)),
+         SourceHost = tostring(extract("sourcehost:([\\d.]+)", 1, RawData)),
+         State = tostring(extract("state:([\\w\\s]+)", 1, RawData)),
+         Country = tostring(extract("country:([\\w\\s]+)", 1, RawData)),
+         Label = tostring(extract("label:([\\w\\s.-]+)", 1, RawData))
+| project Timestamp, Username, SourceHost, DestinationHost, State, Country, Latitude, Longitude, Label
