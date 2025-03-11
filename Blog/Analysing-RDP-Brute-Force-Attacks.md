@@ -7,7 +7,7 @@ Remote Desktop Protocol (**RDP**) is one of the most frequently targeted attack 
 
 In this project, I deployed a **honeypot virtual machine (VM) in Azure**, capturing **real-world** RDP brute-force attack attempts. Using **Azure Sentinel**, **Log Analytics**, and **Kusto Query Language (KQL)**, I analysed attack patterns and visualised geographic attack origins.  
 
-📂 **GitHub Repository**: [Azure Sentinel Honeypot Analysis](https://github.com/YOUR-USERNAME/Azure-Sentinel-Honeypot-Analysis)  
+📂 **GitHub Repository**: [Azure Sentinel Honeypot Analysis](https://github.com/YasifFarook/Azure-Sentinel-Honeypot-Analysis)  
 
 ---
 
